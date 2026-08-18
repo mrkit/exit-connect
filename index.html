@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Exit Connect — Buy &amp; Sell Homes in Northern New Jersey</title>
+<meta name="description" content="Exit Connect is a full-service real estate team in Northern New Jersey — honest guidance and local knowledge for buyers and sellers across Warren, Sussex, and Morris County.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Exit Connect">
+<meta property="og:description" content="Your next move, made simple. Full-service real estate in Northern New Jersey.">
+<meta property="og:url" content="https://exitconnect.me/">
+<meta property="og:image" content="https://exitconnect.me/images/hero-home.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg: oklch(97.5% 0.010 85);
+  --surface: oklch(99.5% 0.006 85);
+  --fg: oklch(25% 0.030 158);
+  --muted: oklch(45% 0.026 72);
+  --border: oklch(86% 0.018 82);
+  --accent: oklch(61% 0.100 72);
+  --accent-deep: oklch(42% 0.075 68);
+  --dark: oklch(22% 0.028 160);
+  --cream: oklch(96% 0.012 85);
+  --cream-dim: oklch(82% 0.018 82);
+  --display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --body: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  --nav-h: 76px;
+  --measure: 74rem;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 10px)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-weight:300;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:color-mix(in oklch, var(--accent) 45%, transparent)}
+:focus-visible{outline:2px solid var(--accent-deep);outline-offset:3px}
+.skip{position:fixed;top:10px;left:10px;z-index:100;transform:translateY(-160%);background:var(--dark);color:var(--cream);padding:10px 14px;text-decoration:none;border-radius:6px;font-family:var(--body);font-size:.85rem}
+.skip:focus{transform:none}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:500;line-height:1.08;letter-spacing:-0.01em;margin:0}
+p{margin:0}
+.wrap{max-width:var(--measure);margin:0 auto;padding-inline:var(--gutter)}
+
+/* ---------- shared type ---------- */
+.eyebrow{font-family:var(--body);font-weight:600;font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent-deep);margin:0 0 1.1rem}
+.on-dark .eyebrow{color:var(--accent)}
+.h-display{font-size:clamp(2.2rem, 5vw, 3.6rem);letter-spacing:-0.02em;line-height:1.05}
+.h-section{font-size:clamp(1.85rem, 3.4vw, 2.7rem);letter-spacing:-0.015em;line-height:1.08}
+.lede{color:var(--muted);max-width:62ch;font-size:1.05rem}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:60;height:var(--nav-h);display:flex;align-items:center;background:color-mix(in oklch, var(--bg) 90%, transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid color-mix(in oklch, var(--border) 70%, transparent)}
+.nav .wrap{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1.25rem}
+.logo{font-family:var(--body);font-weight:600;font-size:0.98rem;text-transform:uppercase;letter-spacing:0.16em;text-decoration:none;color:var(--fg);white-space:nowrap}
+.logo b{color:var(--accent-deep);font-weight:600}
+.nav-links{display:flex;align-items:center;gap:clamp(1rem,2vw,2rem)}
+.nav-links a.nlink{font-family:var(--body);font-weight:500;font-size:0.74rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:var(--muted);min-height:44px;display:inline-flex;align-items:center;transition:color .2s ease}
+.nav-links a.nlink:hover{color:var(--fg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:0 1.6rem;border-radius:999px;font-family:var(--body);font-weight:500;font-size:0.82rem;letter-spacing:0.02em;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .16s ease, background-color .16s ease, color .16s ease, border-color .16s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--cream);color:var(--dark);border-color:var(--cream)}
+.btn-primary:hover{background:var(--bg);color:var(--dark)}
+.btn-ghost{background:transparent;color:var(--fg);border-color:color-mix(in oklch, var(--fg) 55%, transparent)}
+.btn-ghost:hover{background:var(--fg);color:var(--bg)}
+.nav-cta{min-height:44px;padding:0 1.25rem;font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase}
+.nav-toggle{display:none;width:44px;height:44px;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;cursor:pointer;padding:10px}
+.nav-toggle span{display:block;height:2px;width:100%;background:var(--fg);transition:transform .25s ease, opacity .25s ease}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:min(92svh, 54rem);display:grid;place-items:center;text-align:center;overflow:hidden;padding:calc(var(--nav-h) + clamp(3rem,8vh,6rem)) 0 clamp(3rem,8vh,6rem)}
+.hero__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg, color-mix(in oklch, var(--dark) 62%, transparent) 0%, color-mix(in oklch, var(--dark) 46%, transparent) 45%, color-mix(in oklch, var(--dark) 84%, transparent) 100%)}
+.hero__content{position:relative;z-index:2;max-width:52rem;margin-inline:auto;padding-inline:var(--gutter);color:var(--cream)}
+.hero .eyebrow{color:var(--accent)}
+.hero h1{font-size:clamp(2.7rem, 6.4vw, 4.6rem);letter-spacing:-0.025em;line-height:1.02;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.32)}
+.hero-sub{margin:1.4rem auto 2.2rem;max-width:54ch;color:var(--cream);font-size:clamp(1rem,1.4vw,1.15rem);font-weight:300}
+.hero-ctas{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap}
+.hero .btn-ghost{border-color:color-mix(in oklch, var(--cream) 60%, transparent);color:var(--cream)}
+.hero .btn-ghost:hover{background:var(--cream);color:var(--dark);border-color:var(--cream)}
+.hero-note{margin-top:1.9rem;font-family:var(--display);font-style:italic;font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--cream-dim)}
+.hero-note em{font-style:normal;color:var(--accent)}
+
+/* ---------- bands ---------- */
+.band{padding-block:clamp(4rem, 9vw, 7.5rem)}
+.band--light{background:var(--bg);color:var(--fg)}
+.band--dark{background:var(--dark);color:var(--cream)}
+.band--dark .lede{color:var(--cream-dim)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:1.25rem;flex-wrap:wrap;margin-bottom:clamp(2rem,4vw,3.5rem)}
+.sec-head .lede{flex-basis:100%;margin-top:.4rem}
+
+/* ---------- one move (split) ---------- */
+.split{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(min-width:820px){.split{grid-template-columns:1.05fr .95fr}.split--reverse .split__media{order:-1}}
+.split__text .trade{list-style:none;margin:1.6rem 0;padding:0;font-family:var(--display);font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.5;font-weight:400}
+.split__text .trade li{padding:.28rem 0;color:var(--cream)}
+.split__text .trade li::before{content:"— ";color:var(--accent)}
+.split__text .trade + p{color:var(--cream-dim);max-width:56ch}
+.split__text .kicker-final{margin-top:1.5rem;font-family:var(--display);font-style:italic;font-size:clamp(1.15rem,1.9vw,1.4rem);color:var(--accent)}
+.split__media img{width:100%;height:auto;object-fit:cover}
+.split__media--portrait{max-width:22rem;margin-inline:auto}
+.rule-short{border:0;border-top:2px solid var(--cream-dim);width:2.6rem;margin:1.4rem 0}
+
+/* ---------- cards (areas) ---------- */
+.cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:clamp(1.5rem,4vw,3rem);align-items:start}
+.card{border-top:1px solid var(--border);padding-top:1.1rem}
+.card--drop{margin-top:0}
+@media(min-width:880px){.card--drop{margin-top:2.25rem}}
+.card a{position:relative;display:block;text-decoration:none;color:var(--fg)}
+.card .card__media{width:100%;aspect-ratio:4/3;overflow:hidden}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.card a:hover img{transform:scale(1.04)}
+.card__label{display:block;margin-top:.9rem;font-family:var(--body);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;font-size:1.02rem;color:var(--fg)}
+.card__desc{display:block;margin-top:.35rem;font-size:0.9rem;color:var(--muted);max-width:30ch}
+
+/* ---------- full-service split ---------- */
+.why-list{list-style:none;margin:1.8rem 0 0;padding:0;display:grid;gap:1.4rem}
+.why-list li{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+.why-list .num{font-family:var(--display);font-size:1.35rem;color:var(--accent);line-height:1.1}
+.why-list h3{font-size:1.15rem;color:var(--cream);margin-bottom:.25rem}
+.why-list p{color:var(--cream-dim);font-size:.92rem;max-width:46ch}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:clamp(1.5rem,3vw,2.75rem);counter-reset:step}
+.step{border-top:2px solid var(--accent);padding-top:1.3rem}
+.step .step-no{font-family:var(--display);font-size:1rem;letter-spacing:.06em;color:var(--accent-deep);margin-bottom:.7rem}
+.step h3{font-size:1.3rem;margin-bottom:.55rem}
+.step p{color:var(--muted);font-size:.94rem;max-width:34ch}
+
+/* ---------- buyer / seller ---------- */
+.audience{background:color-mix(in oklch, var(--accent) 7%, var(--bg));border-block:1px solid var(--border)}
+.aud-grid{display:grid;grid-template-columns:1fr;gap:clamp(1.5rem,3vw,2.5rem)}
+@media(min-width:820px){.aud-grid{grid-template-columns:1fr 1fr}}
+.aud-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:clamp(1.6rem,3vw,2.4rem);display:flex;flex-direction:column}
+.aud-card h3{font-size:1.6rem;margin-bottom:.6rem}
+.aud-card>p{color:var(--muted);font-size:.95rem;max-width:44ch}
+.aud-card ul{list-style:none;margin:1.3rem 0 1.7rem;padding:0;display:grid;gap:.7rem}
+.aud-card ul li{position:relative;padding-left:1.35rem;font-size:.92rem}
+.aud-card ul li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.aud-card .text-link{font-family:var(--body);font-weight:500;font-size:.85rem;letter-spacing:.02em;color:var(--fg);text-decoration:none;border-bottom:1px solid var(--accent);align-self:flex-start;margin-top:auto;padding-bottom:2px;transition:color .2s ease}
+.aud-card .text-link:hover{color:var(--accent-deep)}
+
+/* ---------- contact ---------- */
+.contact{background:var(--dark);color:var(--cream)}
+.contact .h-section{color:var(--cream)}
+.contact .lede{color:var(--cream-dim);margin-top:.8rem}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+@media(min-width:880px){.contact-grid{grid-template-columns:1fr 1fr}}
+.contact-big{font-family:var(--display);font-size:clamp(1.4rem,3vw,2.1rem);line-height:1.25;margin-top:1.4rem;display:grid;gap:.35rem}
+.contact-big a{color:var(--cream);text-decoration:none;border-bottom:2px solid var(--accent);width:fit-content;transition:border-color .2s ease}
+.contact-big a:hover{border-color:var(--cream)}
+.contact-big a small{display:block;font-family:var(--body);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-dim);margin-top:.3rem}
+.social-note{margin-top:1.6rem;font-size:.82rem;color:var(--cream-dim)}
+.social-note .soon{color:var(--accent)}
+.form{background:color-mix(in oklch, var(--cream) 6%, transparent);border:1px solid color-mix(in oklch, var(--cream) 22%, transparent);border-radius:16px;padding:clamp(1.5rem,3vw,2.2rem)}
+.form label{display:block;font-family:var(--body);font-weight:500;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-dim);margin:0 0 .45rem}
+.form .field{margin-bottom:1.1rem}
+.form input,.form textarea{width:100%;min-height:50px;border-radius:12px;border:1px solid color-mix(in oklch, var(--cream) 24%, transparent);background:color-mix(in oklch, var(--dark) 82%, transparent);color:var(--cream);font:inherit;font-size:.95rem;padding:0 .9rem;outline:none;transition:border-color .16s ease}
+.form textarea{min-height:110px;padding:.7rem .9rem;resize:vertical}
+.form input::placeholder,.form textarea::placeholder{color:oklch(64% 0.02 78)}
+.form input:focus,.form textarea:focus{border-color:var(--accent)}
+.form .btn{width:100%}
+.form-fine{margin-top:.9rem;font-size:.74rem;color:var(--cream-dim)}
+
+/* ---------- footer ---------- */
+.footer{padding:2rem 0 2.4rem;border-top:1px solid color-mix(in oklch, var(--cream) 16%, transparent)}
+.footer .wrap{display:flex;justify-content:space-between;gap:1.25rem;flex-wrap:wrap;font-size:.78rem;color:var(--cream-dim)}
+.footer a{color:var(--cream-dim);text-decoration:none;transition:color .2s ease}
+.footer a:hover{color:var(--cream)}
+.footer .legal-links{display:flex;gap:1.4rem}
+
+/* ---------- motion ---------- */
+.rev{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
+.rev.in{opacity:1;transform:none}
+@media(prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .rev{opacity:1;transform:none;transition:none}
+  .btn:hover{transform:none}
+  .card a:hover img{transform:none}
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:820px){
+  :root{--nav-h:64px}
+  .nav-toggle{display:flex}
+  .nav-links{position:absolute;top:var(--nav-h);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:color-mix(in oklch, var(--bg) 98%, transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .nav-links.open{max-height:24rem}
+  .nav-links a.nlink{padding:.95rem var(--gutter);border-top:1px solid var(--border)}
+  .nav-links .nav-cta{margin:.9rem var(--gutter)}
+  .logo{font-size:.9rem;letter-spacing:.12em}
+  .hero h1{font-size:clamp(2.3rem,9vw,3.2rem)}
+  .hero-ctas{flex-direction:column}
+  .hero-ctas .btn{width:100%}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" data-od-id="primary-navigation">
+  <div class="wrap">
+    <a class="logo" href="#top">Exit <b>Connect</b></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="site-nav">
+      <a class="nlink" href="#buyers">Buy</a>
+      <a class="nlink" href="#sellers">Sell</a>
+      <a class="nlink" href="#areas">Areas</a>
+      <a class="nlink" href="#why">Why us</a>
+      <a class="nlink" href="#contact">Contact</a>
+      <a class="btn btn-ghost nav-cta" href="#contact" data-od-id="nav-cta">Book a call</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<header class="hero" id="top" data-od-id="hero">
+  <img class="hero__bg" src="images/hero-home.png" alt="Welcoming Northern New Jersey colonial farmhouse at golden hour" fetchpriority="high">
+  <div class="hero__content">
+    <p class="eyebrow">Northern New Jersey · Warren · Sussex · Morris</p>
+    <h1>Your next move,<br>made simple.</h1>
+    <p class="hero-sub">Exit Connect is a full-service real estate team helping people buy and sell homes across Northern New Jersey — honest guidance, local knowledge, and none of the fuss.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#contact" data-od-id="hero-primary-cta">Book a call</a>
+      <a class="btn btn-ghost" href="#areas" data-od-id="hero-secondary-cta">Explore the areas</a>
+    </div>
+    <p class="hero-note">Exit one home. <em>Connect</em> with your next.</p>
+  </div>
+</header>
+
+<section class="band band--dark on-dark" data-od-id="one-move">
+  <div class="wrap split">
+    <div class="split__text rev">
+      <p class="eyebrow">Lifestyle</p>
+      <h2 class="h-section">One move can<br>change everything.</h2>
+      <hr class="rule-short">
+      <ul class="trade">
+        <li>Trade the long commute for a quiet back road.</li>
+        <li>Trade the cramped rental for a real backyard.</li>
+        <li>Trade the city noise for birdsong at sunrise.</li>
+      </ul>
+      <p>An hour from the city, Northern New Jersey gives you room to breathe without giving up the access you rely on — good schools, open trails, lakes, and small-town main streets, all within reach.</p>
+      <p class="kicker-final">Sometimes the best move isn't farther away. It's home.</p>
+    </div>
+    <div class="split__media split__media--portrait rev">
+      <img src="images/lifestyle.png" alt="Rocking chairs on a farmhouse porch in the morning light" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="band band--light" id="areas" data-od-id="areas">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <p class="eyebrow">Areas of specialty</p>
+        <h2 class="h-section">Where we work</h2>
+      </div>
+      <p class="lede">Three counties, one team. We know the streets, the schools, and what a fair price looks like in each.</p>
+    </div>
+    <ul class="cards">
+      <li class="card rev" data-od-id="area-card-warren">
+        <a href="#contact">
+          <div class="card__media"><img src="images/warren-county.png" alt="Historic stone farmhouse in Warren County" loading="lazy"></div>
+          <span class="card__label">Warren County</span>
+          <span class="card__desc">Historic stone homes, rolling farmland, and the Delaware River.</span>
+        </a>
+      </li>
+      <li class="card card--drop rev" data-od-id="area-card-sussex">
+        <a href="#contact">
+          <div class="card__media"><img src="images/sussex-county.png" alt="White farmhouse and red barn in Sussex County" loading="lazy"></div>
+          <span class="card__label">Sussex County</span>
+          <span class="card__desc">Woods, lakes, and room to stretch out.</span>
+        </a>
+      </li>
+      <li class="card rev" data-od-id="area-card-morris">
+        <a href="#contact">
+          <div class="card__media"><img src="images/morris-county.png" alt="Lakefront colonial home in Morris County" loading="lazy"></div>
+          <span class="card__label">Morris County</span>
+          <span class="card__desc">Colonial towns with easy rail access to the city.</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="band band--dark on-dark" id="why" data-od-id="why-us">
+  <div class="wrap split split--reverse">
+    <div class="split__media rev">
+      <img src="images/why-connect.png" alt="Welcoming front door with a greenery wreath at golden hour" loading="lazy">
+    </div>
+    <div class="split__text rev">
+      <p class="eyebrow">Why Exit Connect</p>
+      <h2 class="h-section">One team for<br>the whole move.</h2>
+      <hr class="rule-short">
+      <p class="lede">Buying and selling are two halves of one journey. We handle both — so nothing slips between the offer you make and the keys you hand over.</p>
+      <ul class="why-list">
+        <li>
+          <span class="num">01</span>
+          <div><h3>Buy, sell, and everything between</h3><p>Full service from the first showing to the final signature.</p></div>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <div><h3>Local, and it shows</h3><p>Warren, Sussex, and Morris — the streets, the schools, the fair prices.</p></div>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <div><h3>Straight talk, no games</h3><p>Honest numbers and a clear next step at every turn.</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band band--light" data-od-id="how-it-works">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2 class="h-section">Three steps to the door.</h2>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step rev" data-od-id="step-1">
+        <div class="step-no">01</div>
+        <h3>Tell us your goal</h3>
+        <p>A quick call to understand your timeline, budget, and what "done" looks like for you.</p>
+      </div>
+      <div class="step rev" data-od-id="step-2">
+        <div class="step-no">02</div>
+        <h3>We map the move</h3>
+        <p>Curated showings if you're buying — a pricing and marketing plan if you're selling.</p>
+      </div>
+      <div class="step rev" data-od-id="step-3">
+        <div class="step-no">03</div>
+        <h3>Keys in hand</h3>
+        <p>From offer to closing, we handle the details so you can focus on the next chapter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band audience" data-od-id="buyers-sellers">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <p class="eyebrow">Full service</p>
+        <h2 class="h-section">For buyers. For sellers.</h2>
+      </div>
+    </div>
+    <div class="aud-grid">
+      <div class="aud-card rev" id="buyers" data-od-id="audience-buyers">
+        <h3>Buying</h3>
+        <p>We'll find homes that match your list — and the neighborhoods that match your life.</p>
+        <ul>
+          <li>Curated showings, not endless scrolling</li>
+          <li>Local insight on schools, lakes, and commutes</li>
+          <li>Guidance from offer to closing</li>
+        </ul>
+        <a class="text-link" href="#contact">Start your search →</a>
+      </div>
+      <div class="aud-card rev" id="sellers" data-od-id="audience-sellers">
+        <h3>Selling</h3>
+        <p>We'll price it right, show it well, and get you to the closing table.</p>
+        <ul>
+          <li>Honest, data-backed pricing</li>
+          <li>Staging and marketing that works</li>
+          <li>Offers negotiated on your behalf</li>
+        </ul>
+        <a class="text-link" href="#contact">Get a home valuation →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band contact on-dark" id="contact" data-od-id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="rev">
+        <p class="eyebrow">Get in touch</p>
+        <h2 class="h-section">Let's talk.</h2>
+        <p class="lede">Tell us where you're headed and we'll take it from there.</p>
+        <div class="contact-big">
+          <a href="tel:+19087679338">(908) 767-9338<small>Call or text</small></a>
+          <a href="mailto:mari.mfrag@gmail.com">mari.mfrag@gmail.com<small>Email us</small></a>
+        </div>
+        <p class="social-note">Instagram <span class="soon">— coming soon</span></p>
+      </div>
+      <div class="form rev" data-od-id="contact-form">
+        <form id="inquiryForm" novalidate>
+          <div class="field">
+            <label for="fName">Name</label>
+            <input type="text" id="fName" name="name" autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="fEmail">Email</label>
+            <input type="email" id="fEmail" name="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="fMsg">How can we help?</label>
+            <textarea id="fMsg" name="message" placeholder="Buying, selling, or just exploring — tell us a little."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" data-od-id="contact-submit">Send message</button>
+          <p class="form-fine">This opens your email app addressed to us — nothing is stored on this site.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer" data-od-id="footer">
+  <div class="wrap">
+    <span>© <span id="yr"></span> Exit Connect · exitconnect.me</span>
+    <span class="legal-links">
+      <a href="#terms">Terms</a>
+      <a href="#privacy">Privacy</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle=document.querySelector(".nav-toggle");
+  var nav=document.getElementById("site-nav");
+  toggle.addEventListener("click",function(){
+    var open=nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded",open?"true":"false");
+    toggle.setAttribute("aria-label",open?"Close menu":"Open menu");
+  });
+  nav.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click",function(){nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");});
+  });
+
+  document.getElementById("yr").textContent=new Date().getFullYear();
+
+  var form=document.getElementById("inquiryForm");
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=(document.getElementById("fName").value||"").trim();
+    var email=document.getElementById("fEmail").value.trim();
+    if(!email){document.getElementById("fEmail").focus();return;}
+    var msg=(document.getElementById("fMsg").value||"").trim();
+    var subject=encodeURIComponent(name?("New inquiry from "+name):"New inquiry via exitconnect.me");
+    var body=encodeURIComponent((msg?msg+"\n\n":"")+"— "+name+" ("+email+")");
+    window.location.href="mailto:mari.mfrag@gmail.com?subject="+subject+"&body="+body;
+  });
+
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}});
+  },{threshold:.12});
+  document.querySelectorAll(".rev").forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
