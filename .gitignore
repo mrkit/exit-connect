@@ -1,2 +1,4 @@
 .DS_Store
 node_modules/
+# Internal notes; Cloudflare Pages publishes everything committed
+docs/

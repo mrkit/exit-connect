@@ -2,24 +2,30 @@
 
 Static HTML site for EXIT Connect. No build step, database or server code.
 
+## Hosting
+
+Cloudflare Pages, project `exit-connect`, connected to this GitHub repo.
+Every push to `master` deploys the repo root to https://exitconnect.me.
+Everything committed is publicly served, so keep internal files out of git
+(`docs/` is gitignored for that reason).
+
 ## Layout
 
 | Path | What it is |
 | --- | --- |
-| `site/` | The website. Upload the contents of this folder to the host root so `index.html` is at the top level. |
-| `docs/EXIT Connect Website Handoff.pdf` | Handoff notes: hosting steps, lead forms, SEO, guides, brand rules, open items. |
-| `_Archive/` | The first version of the site (single page, August 2026). Not deployed. |
-| `DECISIONS.md` | Log of choices made among real alternatives. |
-
-## Deploying
-
-The host is not chosen yet. On any static host, set the publish directory to `site`
-(or upload the contents of `site/`). Then follow "Connecting exitconnect.me" in the handoff PDF.
+| `index.html`, `blog.html`, `guides.html` | Home, blog list and free guides pages |
+| `blog/` | The four article pages |
+| `img/` | All photos and logos the pages use |
+| `sitemap.xml`, `robots.txt` | Search engine files. Add each new article to the sitemap. |
+| `_headers` | Cloudflare Pages headers. Marks `_Archive/` as noindex. |
+| `_Archive/` | The first version of the site (single page, August 2026) |
+| `docs/` | Local only, not committed. Holds the handoff PDF. |
+| `DECISIONS.md` | Log of choices made among real alternatives |
 
 ## Preview locally
 
 ```sh
-cd site && python3 -m http.server 8000
+python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000.

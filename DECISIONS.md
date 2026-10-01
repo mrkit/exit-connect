@@ -4,24 +4,29 @@ Each entry records a choice made among real alternatives: date, what was chosen,
 why, and what was rejected. Add an entry in the same commit as the change.
 Routine choices with no real alternative do not get entries.
 
-## 2026-09-30: Keep the website in `site/`, not at the repo root
+## 2026-09-30: Site files at the repo root; handoff PDF not committed
 
-**Chosen:** the deployable site lives in `site/`. The repo root holds the README,
-this log, `docs/` and `_Archive/`.
+**Chosen:** the website files sit at the repo root. The handoff PDF stays in a
+gitignored `docs/` folder.
 
-**Why:** the handoff PDF already tells whoever hosts it to upload the contents of
-`site/`. A separate folder also keeps the handoff PDF and the old site out of the
-public upload. Netlify, Cloudflare Pages and Vercel all accept a publish directory.
+**Why:** the host turned out to be decided already. Cloudflare Pages project
+`exit-connect` deploys this repo's root to exitconnect.me on every push. Commit
+`7971bc9` put the site in `site/`, and the live root returned 404 until this
+change. Because Pages publishes every committed file, the handoff PDF (internal
+notes and private links) is kept out of git.
 
-**Rejected:** moving `site/*` to the root, as the first version was. It works
-with GitHub Pages' root option without a workflow, but then `docs/` and `_Archive/`
-would be served publicly unless each host is configured to exclude them.
+**Rejected:** keeping `site/` and changing the Pages build output directory to
+`site` in the Cloudflare dashboard. It keeps internal files unpublished, but needs
+dashboard access this session did not have, and the site was down in the
+meantime. Worth revisiting if more internal files need to live in the repo.
 
 ## 2026-09-30: Keep the first site version in `_Archive/` in the repo
 
-**Chosen:** commit the old `index.html`, `favicon.svg` and `images/` as moves into `_Archive/`.
+**Chosen:** commit the old `index.html`, `favicon.svg` and `images/` as moves into
+`_Archive/`, with a `noindex` header from `_headers`.
 
 **Why:** git stores the moved files as renames of the same content, so the repo does
-not grow, and the old version stays browsable without checking out history.
+not grow, and the old version stays browsable without checking out history. It was
+already public, so serving it at `/_Archive/` exposes nothing new.
 
 **Rejected:** deleting them and relying on git history (commit `d9804b6`) alone.
