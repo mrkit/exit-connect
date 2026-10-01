@@ -4,6 +4,18 @@ Each entry records a choice made among real alternatives: date, what was chosen,
 why, and what was rejected. Add an entry in the same commit as the change.
 Routine choices with no real alternative do not get entries.
 
+## 2026-09-30: Redirect the repo notes instead of moving the site
+
+**Chosen:** a `_redirects` file sends `/README.md` and `/DECISIONS.md` to the
+home page, so the notes stay in the repo but are not readable on the site.
+
+**Why:** Pages publishes the whole repo root, and both files were publicly
+served. A redirect hides them without needing Cloudflare dashboard access.
+
+**Rejected:** moving the site back into a subfolder and changing the Pages build
+output directory (still needs dashboard access, see the first entry), and
+deleting the notes from the repo (they are the record for future sessions).
+
 ## 2026-09-30: Site files at the repo root; handoff PDF not committed
 
 **Chosen:** the website files sit at the repo root. The handoff PDF stays in a
