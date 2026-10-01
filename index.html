@@ -819,7 +819,7 @@ body.modal-open{overflow:hidden}
       var t=titles[intent]||["let's talk",'Schedule a consultation'];
       document.getElementById('m-consult-script').textContent=t[0];
       document.getElementById('m-consult-title').textContent=t[1];
-      if(intent) document.getElementById('mc-intent').value=intent;
+      var mi=document.getElementById('mc-intent'); if(intent) mi.value=intent; else mi.selectedIndex=0;
     }
     if(id==='m-guide'){
       var gs=document.getElementById('mg-topic');
