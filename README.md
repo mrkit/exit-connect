@@ -26,8 +26,13 @@ Everything committed is publicly served, so keep internal files out of git
 
 ## Preview locally
 
+Internal links use clean addresses (`/blog`, `/guides`, `/blog/<slug>`) the way
+Pages serves them, so preview with Cloudflare's local server, which resolves them
+the same way:
+
 ```sh
-python3 -m http.server 8000
+npx wrangler pages dev .
 ```
 
-Then open http://localhost:8000.
+Then open the address it prints. A plain `python3 -m http.server` also works for
+looking at single pages, but links between pages will not resolve there.
