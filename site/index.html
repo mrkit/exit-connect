@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>EXIT Connect Website</title>
+<meta name="description" content="EXIT Connect with Maria Mandap-Fraguada, REALTOR® at EXIT Realty Connections in Hackettstown, NJ. Buying, selling, land and new construction in Warren, Morris, Sussex and Hunterdon counties, plus real estate careers with EXIT.">
+<link rel="canonical" href="https://exitconnect.me/">
+<meta property="og:type" content="website"><meta property="og:title" content="EXIT Connect | Buy, Sell, Build and Join EXIT in Northwest NJ"><meta property="og:description" content="Buying, selling, land and new construction in Northwest New Jersey, plus real estate careers with EXIT Realty Connections."><meta property="og:url" content="https://exitconnect.me/"><meta property="og:image" content="https://exitconnect.me/img/hero-framing-light.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Maria Mandap-Fraguada, REALTOR®","url":"https://exitconnect.me/","image":"https://exitconnect.me/img/ec-headshot.jpg","telephone":"+1-908-696-3530","email":"hello@exitconnect.me","address":{"@type":"PostalAddress","streetAddress":"149 Main Street","addressLocality":"Hackettstown","addressRegion":"NJ","postalCode":"07840","addressCountry":"US"},"areaServed":["Warren County, NJ","Morris County, NJ","Sussex County, NJ","Hunterdon County, NJ"],"parentOrganization":{"@type":"RealEstateAgent","name":"EXIT Realty Connections"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Poppins:wght@300;400;500&display=swap">
+<style>
+/* Layout: one storyline, "build". Full-screen framing hero -> proof -> choose your path -> how it works (tabs) -> rooted locally -> build a career -> talk -> meet Maria as the sign-off. Her book's type and shapes, used with restraint. Committed light look with photo-backed dark bands. */
+:root{
+  --white:#FFFFFF; --paper:#FCFAF7; --ink:#2E2D2C; --text:#4B4845; --muted:#8A837D;
+  --tan:#D9C7B2; --mint:#CFE8E1; --mint-soft:#EEF6F3; --taupe:#EAE0DA;
+  --teal:#14838F; --teal-deep:#1B5E66; --night:#1C2A2C;
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --script:"Allura","Snell Roundhand",cursive;
+  --sans:"Poppins","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--white);color:var(--text);font-family:var(--sans);font-weight:300;font-size:15.5px;line-height:1.8}
+img{display:block;max-width:100%}
+p{margin:0}
+a{color:var(--teal-deep)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:clamp(16px,4vw,44px)}
+section{padding-block:clamp(96px,12vw,170px)}
+
+.caps{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.18em;color:var(--ink);line-height:1.15;margin:0;text-wrap:balance}
+.caps.lg{font-size:clamp(1.8rem,3.6vw,2.6rem)}
+.caps.md{font-size:clamp(1.05rem,1.8vw,1.3rem);letter-spacing:.22em}
+.eyebrow{font-size:.68rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--teal)}
+.script{font-family:var(--script);font-weight:400;line-height:1;color:var(--ink)}
+.rule{height:1px;background:var(--tan);border:0;margin:0}
+.head{display:grid;gap:12px;justify-items:center;text-align:center;margin-bottom:clamp(52px,7vw,92px)}
+.head p.sub{max-width:56ch}
+.head .script{font-size:clamp(2rem,3.6vw,2.7rem);margin-bottom:-8px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:500;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:15px 28px;border:1px solid #F0D9D2;background:#F8E9E4;color:var(--ink);cursor:pointer;border-radius:999px;transition:background .2s,border-color .2s}
+.btn:hover{background:#F2DCD5;border-color:#E9CBC2}
+.btn.teal{background:var(--mint);border-color:#B9DCD3;color:var(--ink)}
+.btn.teal:hover{background:#B9DCD3;border-color:#A6D1C6}
+.btn.light{border-color:rgba(255,255,255,.85);color:#fff}
+.btn.light:hover{background:#fff;color:var(--ink)}
+
+/* Header over the hero */
+header.top{position:fixed;left:0;right:0;top:0;z-index:40;padding-top:env(safe-area-inset-top,0px);background:rgba(253,251,249,.94);backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--tan)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;padding-block:14px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand .wordmark{font-family:var(--display);font-size:1.15rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ink);line-height:1;padding-block:8px}
+.brand .wordmark em{font-family:var(--script);font-style:normal;text-transform:none;letter-spacing:0;font-size:1.9em;color:var(--teal);margin-left:.1em;vertical-align:-.12em}
+.brand .name{font-family:var(--display);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);line-height:1.5;border-left:1px solid var(--tan);padding-left:14px}
+nav.main{display:flex;flex-wrap:wrap;gap:4px 22px;font-size:.66rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase}
+nav.main a{color:var(--ink);text-decoration:none;padding-block:4px;border-bottom:1px solid transparent}
+nav.main a:hover{border-color:currentColor}
+header.top.solid{background:rgba(253,251,249,.96);box-shadow:0 1px 0 var(--tan)}
+nav.main a.join{color:var(--teal)}
+.menu-btn{display:none;place-items:center;width:44px;height:44px;margin-right:-10px;border:0;background:transparent;cursor:pointer}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:24px;height:1.5px;background:var(--ink);position:relative;transition:transform .2s,background .2s}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
+.menu-btn span::before{top:-7px}.menu-btn span::after{top:7px}
+header.top.open .menu-btn span{background:transparent}
+header.top.open .menu-btn span::before{transform:translateY(7px) rotate(45deg)}
+header.top.open .menu-btn span::after{transform:translateY(-7px) rotate(-45deg)}
+.quick{display:none;justify-content:center;flex-wrap:wrap;gap:6px 0;margin:-24px 0 clamp(40px,8vw,56px);font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase}
+.quick a{color:var(--ink);text-decoration:none;padding:4px 14px}
+.quick a + a{border-left:1px solid var(--tan)}
+header.top.solid .brand span,header.top.solid nav.main a{color:var(--ink)}
+header.top.solid nav.main a.join{color:var(--teal)}
+
+/* HERO */
+.hero{position:relative;min-height:min(100svh,900px);display:grid;align-items:center;background:var(--paper);overflow:hidden;padding:0}
+.hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 50%;animation:settle 2.4s ease-out both}
+@keyframes settle{from{transform:scale(1.05)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(253,251,249,.97) 0%,rgba(253,251,249,.9) 30%,rgba(253,251,249,.55) 46%,rgba(253,251,249,0) 62%)}
+.hero .inner{position:relative;z-index:1;padding-block:130px 90px;display:grid;gap:18px;max-width:560px;margin-left:max(0px,calc((100vw - 1160px)/2))}
+.hero .rules{display:grid;gap:14px;justify-items:start}
+.hero .rules::before,.hero .rules::after{content:"";width:100%;height:1px;background:var(--tan)}
+.hero h1{margin:0;font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.16em;line-height:1.08;font-size:clamp(2.4rem,5.4vw,4.3rem);color:var(--ink)}
+.hero h1 .script{display:block;color:var(--teal);font-size:.8em;text-transform:none;letter-spacing:0;margin:.02em 0 .06em;line-height:.9}
+.hero p.lede{font-size:clamp(1rem,1.5vw,1.08rem);max-width:42ch}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.hero .actions .btn{background:var(--mint);border-color:#B9DCD3}
+.hero .actions .btn:hover{background:#F8E9E4;border-color:#EBCFC7}
+.hero .who{font-family:var(--display);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.scroll{position:absolute;z-index:1;right:clamp(16px,4vw,44px);bottom:40px;writing-mode:vertical-rl;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:#fff;display:flex;align-items:center;gap:12px;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.scroll::after{content:"";width:1px;height:56px;background:rgba(255,255,255,.85)}
+
+/* Proof band */
+.proof{background:var(--white);padding-block:0}
+.proof .grid{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--tan)}
+.proof .item{padding:clamp(22px,3vw,34px) 16px;text-align:center;display:grid;gap:4px;align-content:center}
+.proof .item + .item{border-left:1px solid var(--tan)}
+.proof b{font-family:var(--display);font-weight:400;font-size:clamp(1.6rem,3vw,2.3rem);color:var(--ink);line-height:1.1}
+.proof span{font-size:.64rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* Closing: meet your REALTOR */
+.meet{background:var(--paper);border-top:1px solid var(--tan);padding-block:clamp(56px,8vw,96px)}
+.meet .grid{display:grid;grid-template-columns:auto 1fr auto;gap:clamp(28px,5vw,64px);align-items:center}
+.portrait{position:relative;width:clamp(200px,24vw,280px);justify-self:center}
+.portrait::before{content:"";position:absolute;inset:20px -18px -18px 20px;background:var(--mint);border-radius:999px 999px 0 0}
+.portrait img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;border-radius:999px 999px 0 0}
+.meet .copy{display:grid;gap:14px;max-width:56ch}
+.meet h2 .script{display:inline;font-size:1.5em;text-transform:none;letter-spacing:0;vertical-align:-.1em;margin:0 .06em}
+.meet .sig{font-family:var(--script);font-size:2.4rem;color:var(--ink);line-height:1}
+.meet .card-side{display:grid;gap:16px;justify-items:start;border-left:1px solid var(--tan);padding-left:clamp(20px,3vw,36px)}
+.meet dl{margin:0;display:grid;gap:12px}
+.meet dt{font-size:.6rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.meet dd{margin:2px 0 0;font-family:var(--display);font-size:1.05rem;color:var(--ink);user-select:all}
+.meet .badges{display:flex;align-items:center;gap:12px}
+.meet .badges img{width:64px}
+
+/* 2. Choose your path */
+.paths{background:var(--paper)}
+.path-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px)}
+.path{display:grid;grid-template-rows:auto 1fr;background:var(--white);text-decoration:none;color:inherit;border:1px solid transparent;transition:border-color .2s,transform .2s}
+.path:hover{border-color:var(--tan);transform:translateY(-3px)}
+.path .ph{aspect-ratio:1/1;overflow:hidden;border-radius:50%;margin:22px 22px 0}
+.path .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.path:hover .ph img{transform:scale(1.04)}
+.path .tx{padding:24px 22px 30px;display:grid;gap:8px;align-content:start;text-align:center}
+.path h3{margin:0;font-family:var(--display);font-weight:400;font-size:1.15rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.path p{font-size:.88rem}
+.path .go{font-size:.64rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-top:4px}
+.path.join-card .ph{background:#fff}
+.path.join-card .ph img{object-fit:cover}
+
+/* 3. How it works */
+.how .top{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--tan);margin-bottom:clamp(96px,11vw,150px)}
+.how .step{padding:34px 36px 0 0;display:grid;gap:10px;align-content:start}
+.how .step + .step{padding-left:36px;border-left:1px solid var(--tan)}
+.how .step b{font-family:var(--display);font-weight:400;color:var(--teal);font-size:1.4rem;line-height:1}
+.how .step h3{margin:0;font-family:var(--sans);font-weight:500;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.how .step p{font-size:.88rem;color:var(--muted);max-width:30ch}
+.tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-bottom:clamp(64px,8vw,110px)}
+.tab{font:inherit;font-size:.64rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;padding:12px 26px;border-radius:999px;border:1px solid var(--tan);background:transparent;color:var(--ink);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.panel{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(56px,9vw,140px);align-items:center}
+.panel .pic{aspect-ratio:4/5;max-width:440px;width:100%;justify-self:center;overflow:hidden;border-radius:63% 37% 54% 46% / 55% 48% 52% 45%}
+.panel .pic img{width:100%;height:100%;object-fit:cover}
+.panel .body{display:grid;gap:34px;max-width:560px}
+.panel .body > p{font-size:.95rem;max-width:48ch}
+.panel .body h3{margin:0;line-height:1.3}
+.panel .body h3 .script{display:block;margin-bottom:6px}
+.panel .body .btn{justify-self:start;margin-top:6px}
+.gets{list-style:none;margin:0;padding:0;display:grid;gap:14px;border-top:1px solid var(--tan);padding-top:28px}
+.gets li{display:grid;grid-template-columns:24px 1fr;gap:12px;font-size:.95rem}
+.panel .acts{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;margin-top:6px}
+.panel .acts .btn{margin-top:0}
+.guide-link{font-size:.66rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;border-top:1px solid var(--tan);padding-top:30px}
+.phase h4{margin:0 0 14px;font-family:var(--sans);font-weight:500;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);line-height:1.6}
+.phase ul{margin:0;padding:0;list-style:none;font-size:.86rem;display:grid;gap:8px;color:var(--text)}
+
+/* 4. Rooted: Main Street illustration */
+.rooted{background:linear-gradient(180deg,var(--white),var(--mint-soft) 70%,var(--white))}
+.rooted .street{position:relative;margin-top:10px}
+.rooted .street img{width:min(1400px,100%);margin:0 auto}
+.rooted .street::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:repeating-linear-gradient(90deg,#C8876A 0 34px,#BF7C60 34px 36px);opacity:.5}
+.rooted .towns{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 26px;font-family:var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--ink);font-size:.8rem}
+
+/* Magazine spreads */
+.spread{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(48px,8vw,120px);align-items:center}
+.spread .big{aspect-ratio:4/5;overflow:hidden;border-radius:999px 999px 0 0}
+.spread .big img{width:100%;height:100%;object-fit:cover}
+.spread .words{display:grid;gap:26px}
+.pull{font-family:var(--display);font-style:italic;font-weight:400;color:var(--ink);font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.35;margin:0;text-wrap:balance}
+.pull .script{font-style:normal;color:var(--teal);font-size:1.4em}
+.spread .small{width:62%;aspect-ratio:1/1;overflow:hidden;border-radius:50%;justify-self:end}
+.spread .small img{width:100%;height:100%;object-fit:cover}
+.credit{font-size:.62rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,5vw,72px);align-items:start;margin-top:clamp(24px,3vw,48px);margin-bottom:0}
+.gallery figure{margin:0;display:grid;gap:14px;align-content:start}
+.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.gallery img{border-radius:999px 999px 0 0}
+.gallery .g2{margin-top:clamp(40px,7vw,110px)}
+.gallery .g3 img{border-radius:999px 999px 0 0}
+.gallery-dots{display:none;justify-content:center;gap:10px;margin-top:18px}
+.gallery-dots button{width:8px;height:8px;padding:0;border-radius:50%;border:1px solid var(--teal);background:transparent;cursor:pointer}
+.gallery-dots button[aria-current="true"]{background:var(--teal)}
+.gallery figcaption{font-family:var(--display);font-style:italic;font-size:1rem;line-height:1.5;color:var(--text);max-width:30ch}
+
+.rooted{padding-bottom:0}
+.bleed{width:100%;overflow:hidden}
+.bleed img{width:100%;aspect-ratio:21/8;object-fit:cover;object-position:50% 62%}
+@media (max-width:760px){.bleed img{aspect-ratio:4/3}}
+
+/* 5. Build your career */
+.career{background:var(--mint-soft)}
+.career .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,8vw,120px);align-items:center}
+.career .copy{display:grid;gap:24px}
+.career h2 .script{display:block;color:var(--teal);font-size:1.35em;text-transform:none;letter-spacing:0;margin:.06em 0}
+.career ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.career li{display:grid;grid-template-columns:24px 1fr;gap:12px;font-size:.95rem}
+.ck{width:22px;height:22px;border:1.5px solid currentColor;border-radius:50%;position:relative;margin-top:3px;color:var(--teal)}
+.ck::after{content:"";position:absolute;left:6px;top:2px;width:6px;height:10px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.career .thirty{display:flex;align-items:center;gap:14px;font-size:.66rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal)}
+.career .thirty img{width:64px;border-radius:50%;background:#fff}
+.career .side{display:grid;gap:0}
+.career .side .pic{margin-bottom:-6px;position:relative;z-index:1}
+.career .side .pic img{width:100%;height:auto;-webkit-mask-image:linear-gradient(180deg,transparent 0,rgba(0,0,0,.55) 4%,#000 10%);mask-image:linear-gradient(180deg,transparent 0,rgba(0,0,0,.55) 4%,#000 10%)}
+
+/* Forms */
+form.card{background:var(--white);color:var(--text);border:1px solid var(--tan);padding:clamp(22px,3.5vw,36px);display:grid;gap:16px;border-radius:4px}
+form.card h3{margin:0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:grid;gap:6px;min-width:0}
+label{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+input,select,textarea{font:inherit;font-size:.95rem;font-weight:300;color:var(--ink);background:var(--white);border:0;border-bottom:1px solid var(--tan);border-radius:0;padding:10px 2px;width:100%}
+select,textarea{border:1px solid var(--tan);padding:10px 12px}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal)}
+.consent{font-size:.72rem;line-height:1.55;color:var(--muted)}
+.form-note{font-size:.84rem;color:var(--teal-deep);background:var(--mint-soft);padding:12px 14px;border-left:2px solid var(--teal)}
+form .btn{justify-self:start}
+
+/* Pop-up forms */
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:24px 16px;background:rgba(46,45,44,.38);backdrop-filter:blur(3px);overflow-y:auto}
+.modal-card{position:relative;width:100%;max-width:560px;background:var(--white);border-radius:6px;padding:clamp(28px,5vw,48px);display:grid;gap:10px;box-shadow:0 30px 80px -30px rgba(40,35,30,.45);animation:pop .25s ease-out}
+.modal-card .script{font-size:2.2rem;color:var(--teal)}
+.modal-card h2{margin-bottom:14px}
+.modal-card form{display:grid;gap:16px}
+.modal-card .btn{justify-self:start}
+.modal-x{position:absolute;top:12px;right:14px;width:40px;height:40px;border:0;background:transparent;font-size:1.8rem;line-height:1;color:var(--muted);cursor:pointer;border-radius:50%}
+.modal-x:hover{background:var(--paper);color:var(--ink)}
+@keyframes pop{from{transform:translateY(12px);opacity:.6}to{transform:none;opacity:1}}
+body.modal-open{overflow:hidden}
+
+/* Free guide */
+.guide{background:var(--paper)}
+.guide .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(48px,8vw,120px);align-items:center}
+.cover{position:relative;width:min(300px,78%);aspect-ratio:3/4;justify-self:center;background:var(--white);border:1px solid var(--tan);box-shadow:18px 18px 0 var(--mint),0 30px 60px -30px rgba(40,35,30,.35);display:grid;align-content:space-between;padding:30px 26px;text-align:center}
+.cover .eyebrow{font-size:.56rem}
+.cover .t{font-family:var(--display);text-transform:uppercase;letter-spacing:.18em;color:var(--ink);font-size:1.25rem;line-height:1.3}
+.cover .t .script{display:block;text-transform:none;letter-spacing:0;color:var(--teal);font-size:1.9em;margin:.1em 0}
+.cover .mark{font-family:var(--display);font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+.cover hr{width:40px;margin:0 auto;border:0;height:1px;background:var(--tan)}
+.guide .copy{display:grid;gap:22px}
+.guide .copy .script{font-size:clamp(2rem,3.6vw,2.7rem);color:var(--teal)}
+.guide ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.guide li{display:grid;grid-template-columns:24px 1fr;gap:12px;font-size:.93rem}
+.guide form{display:grid;gap:16px;border-top:1px solid var(--tan);padding-top:26px}
+.guide form .btn{justify-self:start}
+
+/* Guides page */
+.glist-in{display:grid;max-width:1040px;margin:0 auto;border-top:1px solid var(--tan)}
+.grow{display:grid;grid-template-columns:clamp(150px,18vw,230px) 1fr;gap:clamp(28px,5vw,64px);align-items:center;padding-block:clamp(36px,5vw,56px);border-bottom:1px solid var(--tan)}
+.grow .ph{aspect-ratio:1/1;overflow:hidden;border-radius:50%}
+.grow .ph img{width:100%;height:100%;object-fit:cover}
+.grow .tx{display:grid;gap:12px;justify-items:start}
+.grow h2{font-size:clamp(1.05rem,1.8vw,1.35rem);line-height:1.35}
+.grow .meta{font-size:.78rem;color:var(--muted);letter-spacing:.04em}
+.grow ul{list-style:none;margin:4px 0 6px;padding:0;display:grid;gap:8px}
+.grow li{display:grid;grid-template-columns:24px 1fr;gap:10px;font-size:.92rem}
+.trust{max-width:640px;margin:clamp(40px,5vw,64px) auto 0;text-align:center;font-size:.8rem;color:var(--muted);line-height:1.7}
+@media (max-width:600px){.grow{grid-template-columns:1fr;justify-items:center;text-align:left}.grow .ph{width:180px}}
+.gpage-head{padding-top:clamp(150px,16vw,210px);padding-bottom:clamp(40px,5vw,70px);background:var(--paper)}
+.gpage-head .head{margin-bottom:0}
+.gpage-head h1{font-size:clamp(1.7rem,3.4vw,2.6rem)}
+.glist{background:var(--paper);padding-top:clamp(30px,4vw,50px)}
+.glist .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(56px,7vw,100px) clamp(40px,6vw,90px)}
+.gcard{display:grid;grid-template-columns:170px 1fr;gap:clamp(24px,3vw,40px);align-items:start}
+.gcard .cover{width:100%;padding:0;overflow:hidden;box-shadow:12px 12px 0 var(--mint),0 24px 50px -28px rgba(40,35,30,.35)}
+.gcard.blush .cover{box-shadow:12px 12px 0 #F8E9E4,0 24px 50px -28px rgba(40,35,30,.35)}
+.gcard .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gcard .cover .t{font-size:.86rem}
+.gcard .cover .eyebrow{font-size:.5rem}
+.gcard .cover .mark{font-size:.52rem}
+.gcard .body{display:grid;gap:14px}
+.gcard h2{font-size:clamp(1.05rem,1.6vw,1.25rem)}
+.gcard .for{font-size:.62rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--teal)}
+.gcard ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.gcard li{display:grid;grid-template-columns:24px 1fr;gap:10px;font-size:.9rem}
+.gcard .btn{justify-self:start;margin-top:6px}
+@media (max-width:860px){.glist .grid{grid-template-columns:1fr}}
+@media (max-width:480px){.gcard{grid-template-columns:1fr}.gcard .cover{width:170px;justify-self:center}}
+
+/* Blog */
+.bhead{padding-top:clamp(150px,16vw,210px);padding-bottom:clamp(40px,5vw,70px);background:var(--paper)}
+.bhead .head{margin-bottom:0}
+.bhead h1{font-size:clamp(2.6rem,6vw,4.6rem);letter-spacing:.28em;padding-left:.28em}
+.blist{background:var(--paper);padding-top:clamp(20px,3vw,40px)}
+.bgrid{display:grid;max-width:980px;margin:0 auto;border-top:1px solid var(--tan)}
+.bcard{display:grid;grid-template-columns:clamp(120px,15vw,180px) 1fr;gap:clamp(24px,4vw,48px);align-items:center;padding-block:clamp(28px,4vw,44px);border-bottom:1px solid var(--tan);text-decoration:none;color:inherit}
+.bcard .ph{aspect-ratio:1/1;overflow:hidden;border-radius:50%}
+.bcard .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.bcard:hover .ph img{transform:scale(1.04)}
+.bcard .tx{display:grid;gap:10px}
+.bcard h2{font-size:clamp(1rem,1.6vw,1.2rem);line-height:1.4}
+.bcard p{font-size:.92rem;max-width:62ch}
+.bcard .go{font-size:.64rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal)}
+@media (max-width:560px){.bcard{grid-template-columns:96px 1fr;gap:18px;align-items:start}.bcard p{display:none}}
+.post{background:var(--paper);padding-top:clamp(130px,14vw,180px);padding-bottom:clamp(80px,9vw,120px)}
+.post .inner{max-width:720px;margin:0 auto;display:grid;gap:22px}
+.post .back{font-size:.64rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);text-decoration:none}
+.post h1{font-size:clamp(1.7rem,3.6vw,2.6rem);line-height:1.25}
+.post .by{font-size:.66rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.post .hero-img{aspect-ratio:16/9;overflow:hidden;border-radius:999px 999px 0 0;margin:10px 0}
+.post .hero-img img{width:100%;height:100%;object-fit:cover}
+.post .inner > p,.post li{font-size:1rem;line-height:1.85}
+.post h3{margin:14px 0 0;font-family:var(--display);font-weight:400;font-size:1.25rem;letter-spacing:.06em;color:var(--ink)}
+.post ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.post .note{font-size:.8rem;color:var(--muted);border-top:1px solid var(--tan);padding-top:14px}
+.post .cta{margin-top:18px;background:var(--white);border:1px solid var(--tan);padding:clamp(24px,4vw,36px);display:grid;gap:12px;justify-items:start}
+.post .cta .script{font-size:2rem;color:var(--teal)}
+.post .cta .acts{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Article funnels */
+.post h2{margin:18px 0 0;font-family:var(--display);font-weight:400;font-size:1.3rem;letter-spacing:.05em;color:var(--ink);line-height:1.35}
+.post .date{color:var(--muted)}
+.optin{background:var(--mint-soft);border-left:2px solid var(--teal);padding:clamp(22px,3.5vw,32px);display:grid;gap:12px;margin:10px 0}
+.optin .script{font-size:1.9rem;color:var(--teal)}
+.optin h3{margin:0}
+.optin p{font-size:.92rem}
+.optin form{display:grid;gap:14px}
+.optin input{background:transparent}
+.optin .btn{justify-self:start}
+.related{border-top:1px solid var(--tan);padding-top:28px;margin-top:10px;display:grid;gap:18px}
+.related .list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.related a{display:grid;gap:10px;text-decoration:none;color:inherit}
+.related img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:50%;max-width:140px}
+.related b{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.12em;font-size:.82rem;color:var(--ink);line-height:1.45}
+.crumbs{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.crumbs a{color:var(--teal);text-decoration:none}
+@media (max-width:560px){.related .list{grid-template-columns:1fr}.related a{grid-template-columns:72px 1fr;align-items:center}}
+
+/* Mobile call / text bar */
+.mbar{display:none}
+@media (max-width:760px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr 1.3fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);box-shadow:0 -1px 0 var(--tan);padding-bottom:env(safe-area-inset-bottom,0px)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:54px;font-size:.64rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+  .mbar a + a{border-left:1px solid var(--tan)}
+  .mbar a.go{background:var(--mint)}
+  body{padding-bottom:calc(54px + env(safe-area-inset-bottom,0px))}
+  .guide .wrap{grid-template-columns:1fr}
+}
+.meet dd a{color:inherit;text-decoration:none}
+.meet dd a:hover{color:var(--teal)}
+
+/* 6. Contact */
+.contact{background:var(--white);padding-block:clamp(36px,4.5vw,56px);border-top:1px solid var(--tan)}
+.contact .band{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,4vw,56px);align-items:center}
+.contact .scene{position:relative;width:clamp(120px,13vw,170px);aspect-ratio:1/1;display:grid;place-items:center}
+.contact .scene::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--white);border:1px solid var(--tan);box-shadow:inset 0 0 0 8px var(--white),inset 0 0 0 9px #EFE5DF}
+.contact .band-body{display:grid;gap:14px}
+.contact .band-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.contact .band-head .script{font-size:2rem;color:var(--teal)}
+.contact form{display:grid;gap:10px}
+.contact .band-row{display:grid;grid-template-columns:1.1fr 1.3fr 1fr 1fr auto;gap:18px;align-items:end}
+.contact input,.contact select{background:transparent}
+.contact select{background:var(--white)}
+.contact .btn{justify-self:start;padding:14px 34px}
+.contact .consent{font-size:.66rem}
+.contact .scene img{position:relative;width:94%;height:auto;display:block;margin-top:6%}
+
+.strip{background:var(--taupe)}
+.strip .wrap{display:grid;grid-template-columns:1fr auto;gap:16px clamp(32px,5vw,72px);align-items:center;padding-block:clamp(18px,2.4vw,28px)}
+.strip .left{display:contents}
+.strip .left > img{height:clamp(56px,6vw,76px);width:auto;max-width:none;order:2}
+.strip .left > div{display:grid;gap:4px}
+.strip .addr{font-family:var(--display);font-size:clamp(1.15rem,2vw,1.55rem);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);line-height:1.3}
+.strip .who{font-family:var(--display);font-size:clamp(1rem,1.6vw,1.2rem);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.strip .addr-line{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-top:6px}
+.strip small.legal{font-size:.58rem;letter-spacing:.14em;margin-top:2px}
+.strip small{font-size:.74rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;line-height:1.8}
+@media (max-width:760px){
+  .strip .wrap{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .strip .who{font-size:1rem;letter-spacing:.16em}
+  .strip .rt,.strip .brk{display:block}
+  .strip .rt{font-size:.7rem;letter-spacing:.24em;margin-top:4px}
+  .strip .dot{display:none}
+  .strip .addr-line{line-height:1.7}
+}
+
+@media (max-width:980px){
+  .contact .band-row{grid-template-columns:1fr 1fr}
+  .path-grid{grid-template-columns:1fr 1fr}
+  .phases{grid-template-columns:1fr}
+  .proof .grid{grid-template-columns:1fr 1fr}
+  .proof .item:nth-child(3){border-left:0}
+  .proof .item:nth-child(n+3){border-top:1px solid var(--tan)}
+}
+@media (max-width:760px){
+  .spread{grid-template-columns:1fr}
+  .spread .small{width:48%}
+  .gallery{display:grid;grid-template-columns:1fr;perspective:1100px;overflow:hidden;margin-inline:-16px;padding:12px 0;touch-action:pan-y;user-select:none}
+  .gallery figure{grid-area:1/1;width:66%;justify-self:center;transition:transform .55s cubic-bezier(.2,.7,.2,1),opacity .55s;transform-style:preserve-3d;cursor:pointer}
+  .gallery figure.is-active{transform:none;opacity:1;z-index:3;cursor:default}
+  .gallery figure.is-prev{transform:translateX(-64%) scale(.76) rotateY(40deg);opacity:.5;z-index:1}
+  .gallery figure.is-next{transform:translateX(64%) scale(.76) rotateY(-40deg);opacity:.5;z-index:1}
+  .gallery figure figcaption{transition:opacity .4s}
+  .gallery figure:not(.is-active) figcaption{opacity:0}
+  .gallery .g2{margin-top:0}
+  .gallery-dots{display:flex}
+  .hero{min-height:min(92svh,760px);display:grid;align-items:start}
+  .hero > img{object-position:60% 50%}
+  .hero::after{background:linear-gradient(180deg,rgba(253,251,249,.96) 0%,rgba(253,251,249,.9) 38%,rgba(253,251,249,.45) 62%,rgba(253,251,249,0) 80%)}
+  .hero .inner{padding-block:104px 48px;margin-left:0}
+  .scroll{display:none}
+  .meet .grid{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .meet .copy{justify-items:center}
+  .meet .card-side{border-left:0;padding-left:0;justify-items:center;border-top:1px solid var(--tan);padding-top:20px}
+  .panel,.career .wrap,.row{grid-template-columns:1fr}
+  .contact .band{grid-template-columns:1fr;justify-items:center}
+  .contact .band-body{width:100%}
+  .contact .band-head{justify-content:center}
+  .contact .band-row{grid-template-columns:1fr}
+  .how .top{grid-template-columns:1fr}
+  .how .step + .step{padding-left:0;border-left:0;border-top:1px solid var(--tan);padding-top:18px;margin-top:18px}
+  .panel .pic{max-width:340px;justify-self:center;width:100%}
+  .contact dl{grid-template-columns:1fr}
+  header.top .wrap{flex-wrap:nowrap}
+  .menu-btn{display:grid}
+  nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:rgba(253,251,249,.98);box-shadow:0 1px 0 var(--tan);flex-direction:column;gap:0;padding:6px 16px 14px}
+  header.top.open nav.main{display:flex}
+  nav.main a{padding:14px 0;border-bottom:1px solid #EFE5DF;font-size:.72rem}
+  nav.main a:last-child{border-bottom:0}
+  .quick{display:flex}
+  .rooted .towns{display:grid;grid-template-columns:auto auto;justify-content:center;gap:8px 34px}
+  .scroll{display:none}
+  .portrait{max-width:330px}
+}
+@media (max-width:480px){
+  .path-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .path .ph{margin:14px 14px 0}
+  .path .tx{padding:14px 10px 18px;gap:6px}
+  .path h3{font-size:.9rem;letter-spacing:.16em}
+  .path p{font-size:.76rem;line-height:1.55}
+  .path .go{font-size:.54rem;letter-spacing:.14em}
+}
+</style>
+</head>
+<body>
+
+<header class="top" id="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="EXIT Connect home">
+      <span class="wordmark">EXIT <em>Connect</em></span>
+    </a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+    <nav class="main" id="main-nav" aria-label="Main">
+      <a href="blog.html">Blog</a>
+      <a href="#how">How it works</a>
+      <a href="guides.html">Free guides</a>
+      <a class="join" href="#career">Join EXIT</a>
+      <a class="cta" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <img src="img/hero-framing-light.jpg" alt="Sunlight pouring through the window of a newly framed home">
+  <div class="wrap inner">
+    <span class="eyebrow">EXIT Connect · Northwest New Jersey</span>
+    <div class="rules">
+      <h1>Let's build<span class="script">what comes</span>next</h1>
+    </div>
+    <div class="actions">
+      <a class="btn teal" href="#contact" data-modal="consult">Schedule a consultation</a>
+      <a class="btn teal" href="#career" data-modal="join">Join EXIT</a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. CHOOSE YOUR PATH -->
+<section class="paths" id="paths">
+  <div class="wrap">
+    <nav class="quick" aria-label="Explore"><a href="blog.html">Blog</a><a href="#how">How it works</a><a href="guides.html">Free guides</a></nav>
+    <div class="head">
+      <span class="script" style="font-size:clamp(3.2rem,7vw,5.2rem);margin-bottom:-.12em">welcome</span>
+      <h2 class="caps" style="font-size:clamp(2.6rem,6.5vw,5rem);letter-spacing:.28em;padding-left:.28em;line-height:1">Home</h2>
+    </div>
+    <div class="path-grid">
+      <a class="path" href="#how" data-tab="sell">
+        <div class="ph"><img src="img/sofa-circle.jpg" alt="Mint sofa in a bright room"></div>
+        <div class="tx"><h3>Sell</h3><p>Pricing, preparation and marketing that make the most of your home.</p><span class="go">See the selling plan →</span></div>
+      </a>
+      <a class="path" href="#how" data-tab="buy">
+        <div class="ph"><img src="img/teal-shutters.jpg" alt="White colonial with teal shutters"></div>
+        <div class="tx"><h3>Buy</h3><p>From pre-approval to closing day, a calm guide through every step.</p><span class="go">See the buying plan →</span></div>
+      </a>
+      <a class="path" href="#how" data-tab="build">
+        <div class="ph"><img src="img/lot-plan.jpg" alt="Subdivision lot plan"></div>
+        <div class="tx"><h3>Build</h3><p>Land, new construction and development, from the lot plan to the keys.</p><span class="go">See the building plan →</span></div>
+      </a>
+      <a class="path join-card" href="#career" data-modal="join">
+        <div class="ph"><img src="img/thirty-green.jpg" alt="EXIT Realty 30 Years of Excellence"></div>
+        <div class="tx"><h3>Join EXIT</h3><p>Build your real estate career with a working agent in your corner.</p><span class="go">Explore a career →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SPREAD: somewhere different -->
+<section class="breather">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Northwest New Jersey</span>
+      <p class="pull" style="max-width:26ch">Sometimes the best move isn't farther away. It's simply <span class="script">somewhere different.</span></p>
+      <hr class="rule" style="width:80px">
+      <p class="sub">Buying, selling, building a home or building a career. Work with an agent who knows real estate from the ground up.</p>
+    </div>
+    <div class="gallery">
+      <figure class="g1"><img src="img/greenhouse.jpg" alt="Victorian glass greenhouse on a stone base"><figcaption>Room to grow, with properties big enough for gardens, a greenhouse and some breathing room.</figcaption></figure>
+      <figure class="g2"><img src="img/stone-house.jpg" alt="Stone farmhouse in a green spring valley"><figcaption>Stone farmhouses and country homes with history in every wall.</figcaption></figure>
+      <figure class="g3"><img src="img/sunflowers.jpg" alt="Sunflower field under a blue sky"><figcaption>Pick-your-own farms and summer fields just minutes from home.</figcaption></figure>
+    </div>
+    <div class="gallery-dots" aria-label="Photo navigation"></div>
+  </div>
+</section>
+
+<!-- 4. ROOTED -->
+<section class="rooted">
+  <div class="wrap">
+    <div class="head">
+      <span class="script">lifestyle matters</span>
+      <h2 class="caps lg">Rooted on Main Street</h2>
+      <p class="sub">Firsthand knowledge of the towns I serve, from neighborhoods and commutes to local amenities and the charm that makes each one different.</p>
+      <div class="towns"><span>Warren</span><span>Morris</span><span>Hunterdon</span><span>Sussex</span></div>
+    </div>
+  </div>
+  <div class="bleed"><img src="img/garden-row-wide.jpg" alt="Townhouses rising behind flowering bushes" style="aspect-ratio:3/1;object-position:50% 0%"></div>
+</section>
+
+<!-- 3. HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="head">
+      <span class="script">simple and clear</span>
+      <h2 class="caps lg">How it works</h2>
+    </div>
+    <div class="top">
+      <div class="step"><b>01</b><h3>Schedule a consultation</h3><p>A relaxed conversation about your goals, timing and questions.</p></div>
+      <div class="step"><b>02</b><h3>Get a personalized analysis</h3><p>Value, market and a plan built around your situation.</p></div>
+      <div class="step"><b>03</b><h3>Guidance start to finish</h3><p>Every call, deadline and detail handled with you.</p></div>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Plans">
+      <button class="tab" role="tab" id="t-sell" aria-controls="p-sell" aria-selected="true">Selling</button>
+      <button class="tab" role="tab" id="t-buy" aria-controls="p-buy" aria-selected="false">Buying</button>
+      <button class="tab" role="tab" id="t-build" aria-controls="p-build" aria-selected="false">Building</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-sell" aria-labelledby="t-sell">
+      <div class="pic"><img src="img/barn.jpg" alt="Red barn beyond a wheat field" style="object-position:50% 70%"></div>
+      <div class="body">
+        <h3 class="caps md"><span class="script" style="font-size:2.2em;text-transform:none;letter-spacing:0;vertical-align:-.15em">Relax</span> we do the work for you</h3>
+        <p>Every property and every seller's goals are different. Guidance on value, preparation, positioning and marketing makes a real difference, and makes the move to what comes next as seamless as possible.</p>
+        <ul class="gets"><li><span class="ck" aria-hidden="true"></span><span>A pricing plan built on local sales</span></li><li><span class="ck" aria-hidden="true"></span><span>Preparation advice before you spend</span></li><li><span class="ck" aria-hidden="true"></span><span>Marketing and guidance through closing day</span></li></ul>
+        <div class="acts"><a class="btn teal" href="#contact" data-modal="consult" data-intent="Sell">Request a home value</a><a class="guide-link" href="guides.html" data-modal="guide" data-intent="Seller's Guide">Get the Seller's Guide →</a></div>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-buy" aria-labelledby="t-buy" hidden>
+      <div class="pic"><img src="img/teal-shutters.jpg" alt="White colonial home with teal shutters"></div>
+      <div class="body">
+        <h3 class="caps md"><span class="script" style="font-size:2.2em;text-transform:none;letter-spacing:0;vertical-align:-.15em">Welcome</span> home</h3>
+        <p>Buying a home is about more than finding a property you love. From value and financing to negotiating the right terms and navigating inspections, you make informed decisions and move confidently toward homeownership.</p>
+        <ul class="gets"><li><span class="ck" aria-hidden="true"></span><span>A search built around your must-haves</span></li><li><span class="ck" aria-hidden="true"></span><span>Offers backed by local pricing insight</span></li><li><span class="ck" aria-hidden="true"></span><span>Attorney, inspection and closing coordination</span></li></ul>
+        <div class="acts"><a class="btn teal" href="#contact" data-modal="consult" data-intent="Buy">Start my search</a><a class="guide-link" href="guides.html" data-modal="guide" data-intent="Buyer's Guide">Get the Buyer's Guide →</a></div>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-build" aria-labelledby="t-build" hidden>
+      <div class="pic"><img src="img/arch-window.jpg" alt="Finished landing with an arched window"></div>
+      <div class="body">
+        <h3 class="caps md">From <span class="script" style="font-size:2.2em;text-transform:none;letter-spacing:0;vertical-align:-.15em">land</span> to keys</h3>
+        <p>Successful projects start well before construction. Understanding site potential, zoning, approvals, engineering and permitting moves a property from an idea to a buildable plan, and new construction buyers get someone who reads plans, specs and builder timelines.</p>
+        <ul class="gets"><li><span class="ck" aria-hidden="true"></span><span>Lot, zoning and site evaluation</span></li><li><span class="ck" aria-hidden="true"></span><span>Approvals and builder coordination</span></li><li><span class="ck" aria-hidden="true"></span><span>Plans and specs read by someone who has built</span></li></ul>
+        <div class="acts"><a class="btn teal" href="#contact" data-modal="consult" data-intent="Build">Talk through a project</a><a class="guide-link" href="guides.html" data-modal="guide" data-intent="Land &amp; Building Guide">Get the Land &amp; Building Guide →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CAREER -->
+<section class="career" id="career">
+  <div class="wrap">
+    <div class="copy">
+      <span class="eyebrow">Join EXIT Connect</span>
+      <h2 class="caps lg">Build your<span class="script">career</span>with EXIT</h2>
+      <p>Newly licensed or ready for a change, grow your business with a working agent in your corner and a brand clients know.</p>
+      <ul>
+        <li><span class="ck" aria-hidden="true"></span><span>Mentorship from an agent in the field every day</span></li>
+        <li><span class="ck" aria-hidden="true"></span><span>EXIT's sponsorship program, which can reward you for agents you introduce. Ask how it works.</span></li>
+        <li><span class="ck" aria-hidden="true"></span><span>A supportive local office on Main Street in Hackettstown</span></li>
+        <li><span class="ck" aria-hidden="true"></span><span>People before profits, and every sale gives back</span></li>
+      </ul>
+    </div>
+    <div class="side">
+    <div class="pic"><img src="img/streetscape.webp" alt="Illustration of a historic Main Street with the Warren County Surrogate's Office, a green Victorian and a red brick storefront"></div>
+    <form class="card lead" data-form="Join EXIT" novalidate>
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <h3 class="caps md">Book a confidential chat</h3>
+      <div class="row">
+        <div class="field"><label for="j-name">Full name</label><input id="j-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="j-phone">Phone</label><input id="j-phone" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="j-email">Email</label><input id="j-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="row">
+        <div class="field"><label for="j-status">License status</label><select id="j-status" name="status"><option>Licensed</option><option>In school</option><option>Thinking about it</option></select></div>
+        <div class="field"><label for="j-brokerage">Current brokerage (optional)</label><input id="j-brokerage" name="brokerage" autocomplete="organization"></div>
+      </div>
+      <button class="btn teal" type="submit">Book a confidential chat</button>
+      <p class="form-note" hidden role="status"></p>
+    </form>
+    </div>
+  </div>
+</section>
+
+<!-- MEET YOUR REALTOR -->
+<section class="meet" id="about">
+  <div class="wrap grid">
+    <div class="portrait"><img src="img/ec-headshot.jpg" alt="Maria Mandap-Fraguada, REALTOR®"></div>
+    <div class="copy">
+      <span class="eyebrow">Meet your REALTOR®</span>
+      <h2 class="caps lg">On <span class="script">your</span> side</h2>
+      <p>Rooted in Hudson County and at home in Warren County for more than a decade, Maria specializes in new construction, land, rural properties and development. A background in construction, remodeling and design brings a practical eye to every transaction.</p>
+      <p>The result is accurate pricing, realistic plans and fewer surprises for sellers, buyers, builders and property owners.</p>
+      <span class="sig">Maria M. Fraguada</span>
+    </div>
+    <div class="card-side">
+      <dl>
+        <div><dt>Direct</dt><dd><a href="tel:+19086963530">(908) 696-3530</a></dd></div>
+        <div><dt>Office</dt><dd><a href="tel:+18443673948">(844) FOR-EXIT</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:hello@exitconnect.me">hello@exitconnect.me</a></dd></div>
+      </dl>
+      <div class="badges">
+        <img src="img/badge-crem.png" alt="Certified Real Estate Marketer">
+        <img src="img/badge-newhome.png" alt="New Home Certified Professional">
+      </div>
+      <img class="eho" src="img/realtor-eho-trim.png" alt="REALTOR® and Equal Housing Opportunity" style="height:52px;width:auto;filter:brightness(0);opacity:.55;margin-top:4px">
+    </div>
+  </div>
+</section>
+
+<!-- 6. CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap band">
+    <div class="scene"><img src="img/house.webp" alt="Watercolor cottage with blue hydrangeas and a mailbox"></div>
+    <div class="band-body">
+      <div class="band-head">
+        <h2 class="caps md">Contact us</h2>
+      </div>
+      <form class="lead" data-form="Consultation" novalidate>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <div class="band-row">
+          <div class="field"><label for="c-name">Full name</label><input id="c-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="c-intent">I'm looking to</label><select id="c-intent" name="intent"><option>Sell</option><option>Buy</option><option>Build</option><option>Join EXIT</option><option>Something else</option></select></div>
+          <button class="btn teal" type="submit">Send</button>
+        </div>
+        <p class="consent">By submitting, you agree to be contacted by phone, text or email about your request. Reply STOP to opt out of texts.</p>
+        <p class="form-note" hidden role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="left">
+      <img src="img/exit-logo.png" alt="EXIT Realty Connections">
+      <div style="display:grid;gap:2px">
+        <span class="who">Maria Mandap-Fraguada<span class="rt"><span class="dot"> · </span>REALTOR®</span></span>
+        <span class="addr-line"><span class="brk">EXIT Realty Connections</span><span class="dot"> · </span><span class="brk">149 Main Street, Hackettstown, NJ 07840</span></span>
+        <small class="legal">Each office is independently owned and operated</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+
+
+
+<div class="modal" id="m-consult" hidden role="dialog" aria-modal="true" aria-labelledby="m-consult-title">
+  <div class="modal-card">
+    <button class="modal-x" type="button" aria-label="Close">&times;</button>
+    <span class="script" id="m-consult-script">let's talk</span>
+    <h2 class="caps md" id="m-consult-title">Schedule a consultation</h2>
+    <form class="lead" data-form="Consultation" novalidate>
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <div class="row">
+        <div class="field"><label for="mc-name">Full name</label><input id="mc-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="mc-phone">Phone</label><input id="mc-phone" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="mc-email">Email</label><input id="mc-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="mc-intent">I'm looking to</label><select id="mc-intent" name="intent"><option>Sell</option><option>Buy</option><option>Build</option><option>Join EXIT</option><option>Something else</option></select></div>
+      <div class="field"><label for="mc-msg">Message</label><textarea id="mc-msg" name="message" placeholder="Your town, timing, or anything on your mind"></textarea></div>
+      <p class="consent">By submitting, you agree to be contacted by phone, text or email about your request. Reply STOP to opt out of texts.</p>
+      <button class="btn teal" type="submit">Send</button>
+      <p class="form-note" hidden role="status"></p>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="m-join" hidden role="dialog" aria-modal="true" aria-labelledby="m-join-title">
+  <div class="modal-card">
+    <button class="modal-x" type="button" aria-label="Close">&times;</button>
+    <span class="script">come grow with us</span>
+    <h2 class="caps md" id="m-join-title">Book a confidential chat</h2>
+    <form class="lead" data-form="Join EXIT" novalidate>
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <div class="row">
+        <div class="field"><label for="mj-name">Full name</label><input id="mj-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="mj-phone">Phone</label><input id="mj-phone" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="mj-email">Email</label><input id="mj-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="row">
+        <div class="field"><label for="mj-status">License status</label><select id="mj-status" name="status"><option>Licensed</option><option>In school</option><option>Thinking about it</option></select></div>
+        <div class="field"><label for="mj-brokerage">Current brokerage (optional)</label><input id="mj-brokerage" name="brokerage" autocomplete="organization"></div>
+      </div>
+      <button class="btn teal" type="submit">Book my chat</button>
+      <p class="form-note" hidden role="status"></p>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="m-guide" hidden role="dialog" aria-modal="true" aria-labelledby="m-guide-title">
+  <div class="modal-card">
+    <button class="modal-x" type="button" aria-label="Close">&times;</button>
+    <span class="script" id="m-guide-script">before you go</span>
+    <h2 class="caps md" id="m-guide-title">Get your free guide</h2>
+    <p style="margin-bottom:6px" id="m-guide-sub">Choose the guide for what you need, written for Warren, Morris, Sussex and Hunterdon counties.</p>
+    <form class="lead" data-form="Free guide" novalidate>
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <div class="row">
+        <div class="field"><label for="mg-name">First name</label><input id="mg-name" name="name" autocomplete="given-name" required></div>
+        <div class="field"><label for="mg-email">Email</label><input id="mg-email" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="field"><label for="mg-topic">Which guide?</label><select id="mg-topic" name="guide"><option>Seller's Guide</option><option>Buyer's Guide</option><option>Land &amp; Building Guide</option><option>Agent Career Guide</option></select></div>
+      <p class="consent">By signing up, you agree to receive emails from Maria. Unsubscribe anytime.</p>
+      <button class="btn teal" type="submit">Send me the guide</button>
+      <p class="form-note" hidden role="status"></p>
+    </form>
+  </div>
+</div>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a href="tel:+19086963530">Call</a>
+  <a href="sms:+19086963530">Text</a>
+  <a class="go" href="#contact" data-modal="consult">Get in touch</a>
+</nav>
+
+<script>
+(function(){
+  var h=document.getElementById('hdr'), b=h&&h.querySelector('.menu-btn'); if(!b) return;
+  function set(o){ h.classList.toggle('open',o); b.setAttribute('aria-expanded',o); }
+  b.addEventListener('click',function(){ set(!h.classList.contains('open')); });
+  h.querySelectorAll('nav.main a').forEach(function(a){ a.addEventListener('click',function(){ set(false); }); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') set(false); });
+})();
+</script>
+<script>
+(function(){
+  var g=document.querySelector('.gallery'), d=document.querySelector('.gallery-dots'); if(!g||!d) return;
+  var figs=[].slice.call(g.querySelectorAll('figure')), n=figs.length, cur=0;
+  figs.forEach(function(f,i){
+    var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','Photo '+(i+1));
+    b.addEventListener('click',function(){ go(i); }); d.appendChild(b);
+    f.addEventListener('click',function(){ if(i!==cur) go(i); });
+  });
+  var dots=[].slice.call(d.children);
+  function go(i){
+    cur=(i+n)%n;
+    figs.forEach(function(f,k){
+      f.classList.remove('is-active','is-prev','is-next');
+      if(k===cur) f.classList.add('is-active');
+      else if(k===(cur-1+n)%n) f.classList.add('is-prev');
+      else if(k===(cur+1)%n) f.classList.add('is-next');
+      f.setAttribute('aria-hidden',k!==cur);
+    });
+    dots.forEach(function(b,k){ b.setAttribute('aria-current',k===cur); });
+  }
+  var x0=null;
+  g.addEventListener('touchstart',function(e){ x0=e.touches[0].clientX; },{passive:true});
+  g.addEventListener('touchend',function(e){ if(x0===null) return; var dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>40) go(cur+(dx<0?1:-1)); x0=null; });
+  go(0);
+})();
+</script>
+<script>
+(function(){
+  var hdr=document.getElementById('hdr');
+  function onScroll(){hdr.classList.toggle('solid',window.scrollY>60);}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function show(name){
+    tabs.forEach(function(t){var on=t.id==='t-'+name;t.setAttribute('aria-selected',on);document.getElementById(t.getAttribute('aria-controls')).hidden=!on;});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.id.slice(2));});});
+  document.querySelectorAll('[data-tab]').forEach(function(a){a.addEventListener('click',function(){show(a.dataset.tab);});});
+
+  document.querySelectorAll('[data-intent]').forEach(function(a){a.addEventListener('click',function(){var s=document.getElementById('c-intent');if(s)s.value=a.dataset.intent;});});
+  // pop-up forms
+  var titles={Sell:['a personal review','Request a home value'],Buy:['let us search for you','Start my search'],Build:['from land to keys','Talk through a project']};
+  var lastBtn=null;
+  function openModal(id,intent,btn){
+    var m=document.getElementById(id); if(!m) return;
+    lastBtn=btn||null;
+    if(id==='m-consult'){
+      var t=titles[intent]||["let's talk",'Schedule a consultation'];
+      document.getElementById('m-consult-script').textContent=t[0];
+      document.getElementById('m-consult-title').textContent=t[1];
+      if(intent) document.getElementById('mc-intent').value=intent;
+    }
+    if(id==='m-guide'){
+      var gs=document.getElementById('mg-topic');
+      document.getElementById('m-guide-title').textContent=intent?('Get the '+intent):'Get your free guide';
+      document.getElementById('m-guide-script').textContent=intent?'a free guide':'before you go';
+      document.getElementById('m-guide-sub').hidden=!!intent;
+      if(intent){ gs.value=intent; gs.closest('.field').hidden=true; } else { gs.closest('.field').hidden=false; }
+    }
+    m.hidden=false; document.body.classList.add('modal-open');
+    var f=m.querySelector('input,select,textarea'); if(f) setTimeout(function(){f.focus();},30);
+  }
+  function closeModal(m){ m.hidden=true; document.body.classList.remove('modal-open'); if(lastBtn) lastBtn.focus(); }
+  document.querySelectorAll('[data-modal]').forEach(function(b){
+    b.addEventListener('click',function(e){ e.preventDefault(); e.stopImmediatePropagation(); openModal('m-'+b.dataset.modal,b.dataset.intent,b); });
+  });
+  document.querySelectorAll('.modal').forEach(function(m){
+    m.addEventListener('click',function(e){ if(e.target===m) closeModal(m); });
+    m.querySelector('.modal-x').addEventListener('click',function(){ closeModal(m); });
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ document.querySelectorAll('.modal:not([hidden])').forEach(closeModal); } });
+  var LEAD_EMAIL='mari.mfrag@gmail.com';
+
+  // where each lead came from (ads, QR codes, social); first touch kept for the visit
+  function store(k,v){ try{ if(v===undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k,v); }catch(e){ return null; } }
+  var q=new URLSearchParams(location.search);
+  var SRC=null; try{ SRC=JSON.parse(store('ec_src')||'null'); }catch(e){}
+  var fresh={'Ad source':q.get('utm_source'),'Ad medium':q.get('utm_medium'),'Ad campaign':q.get('utm_campaign'),'Ad content':q.get('utm_content'),'Ad keyword':q.get('utm_term'),'Click ID':q.get('gclid')||q.get('fbclid')||q.get('msclkid')};
+  if(!SRC||Object.keys(fresh).some(function(k){return fresh[k];})){
+    SRC=fresh; SRC['Referrer']=document.referrer||'Direct'; SRC['Landing page']=location.href.split('#')[0];
+    store('ec_src',JSON.stringify(SRC));
+  }
+  function markDone(){ store('ec_done','1'); }
+  document.querySelectorAll('form.lead').forEach(function(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var note=form.querySelector('.form-note');
+      var missing=[].filter.call(form.querySelectorAll('[required]'),function(el){return !el.value.trim();});
+      var email=form.querySelector('input[type=email]');
+      if(missing.length){note.textContent='Please add your '+missing.map(function(el){return form.querySelector('label[for="'+el.id+'"]').textContent.toLowerCase();}).join(' and ')+'.';note.hidden=false;missing[0].focus();return;}
+      if(email&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value.trim())){note.textContent='Please enter a full email address, like name@example.com.';note.hidden=false;email.focus();return;}
+      var fd=new FormData(form), data={};
+      fd.forEach(function(v,k){ data[k]=String(v).trim(); });
+      if(data._honey){ return; }
+      var type=data.guide?('Free guide ('+data.guide+')'):(data.intent||form.getAttribute('data-form')||'Inquiry');
+      data._subject='EXIT Connect: '+type+' : '+data.name;
+      data['Lead type']=type;
+      data['Form']=form.getAttribute('data-form');
+      data['Page']=location.href.split('?')[0];
+      Object.keys(SRC).forEach(function(k){ if(SRC[k]) data[k]=SRC[k]; });
+      data._template='table';
+      var next=data.guide?'I\'ll send your '+data.guide+' shortly.'
+        :(type==='Join EXIT'?'I\'ll reach out shortly to set up a time for our confidential chat.':'I\'ll be in touch shortly to talk through your plans.');
+      { data._autoresponse='Hi '+data.name.split(' ')[0]+',\n\nThank you for your interest! I\'m looking forward to being of assistance. '+next+'\n\nMaria Mandap-Fraguada, REALTOR®\nEXIT Realty Connections · 149 Main Street, Hackettstown, NJ 07840\n(908) 696-3530 · hello@exitconnect.me\nEach office is independently owned and operated.'; }
+      data._captcha='false';
+      delete data._honey;
+      var btn=form.querySelector('button[type=submit],button:not([type])');
+      if(btn){ btn.disabled=true; }
+      note.textContent='Sending…';note.hidden=false;
+      fetch('https://formsubmit.co/ajax/'+LEAD_EMAIL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+        .then(function(r){ return r.json().then(function(j){ if(!r.ok||String(j.success)==='false'){ throw new Error(j.message||'failed'); } }); })
+        .then(function(){ form.reset(); note.textContent=data.guide?'Thank you! Maria will send your guide to your inbox.':'Thank you! Your message is on its way to Maria.'; markDone(); })
+        .catch(function(){ note.textContent='Sorry, that didn\'t go through. Please call or email Maria directly.'; })
+        .then(function(){ if(btn){ btn.disabled=false; } });
+    });
+  });
+
+  // ad links: ?form=sell | buy | build | consult | join | guide
+  var want=(q.get('form')||'').toLowerCase();
+  var map={sell:['m-consult','Sell'],buy:['m-consult','Buy'],build:['m-consult','Build'],consult:['m-consult'],contact:['m-consult'],join:['m-join'],guide:['m-guide'],
+    'seller-guide':['m-guide',"Seller's Guide"],'buyer-guide':['m-guide',"Buyer's Guide"],'building-guide':['m-guide','Land & Building Guide'],'agent-guide':['m-guide','Agent Career Guide']};
+  if(map[want]) setTimeout(function(){ openModal(map[want][0],map[want][1]); store('ec_exit','1'); },500);
+
+  // one gentle offer when a desktop visitor heads for the tab bar
+  var armed=false; setTimeout(function(){ armed=true; },8000);
+  document.addEventListener('mouseout',function(e){
+    if(!armed||e.relatedTarget||e.clientY>0||document.getElementById('guides')) return;
+    if(store('ec_exit')||store('ec_done')||document.querySelector('.modal:not([hidden])')) return;
+    if(window.matchMedia('(max-width:760px)').matches) return;
+    store('ec_exit','1'); armed=false; var gm=document.querySelector('main[data-guide]'); openModal('m-guide',gm?gm.getAttribute('data-guide'):undefined);
+  });
+})();
+</script>
+
+</body>
+</html>
