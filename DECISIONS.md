@@ -8,7 +8,7 @@ Routine choices with no real alternative do not get entries.
 
 **Chosen:** `/privacy` shows EXIT Realty Connections' Privacy Policy by embedding
 the same Thryv-hosted page the brokerage site embeds, with a direct link as a
-fallback and the brokerage's contact for questions.
+fallback. Questions go to Maria's own email.
 
 **Why:** Maria must follow the brokerage's rules, so the site uses the brokerage's
 policy, and embedding keeps it identical whenever the brokerage's vendor updates it.
