@@ -317,6 +317,14 @@ body.modal-open{overflow:hidden}
 /* Article funnels */
 .post h2{margin:18px 0 0;font-family:var(--display);font-weight:400;font-size:1.3rem;letter-spacing:.05em;color:var(--ink);line-height:1.35}
 .post .date{color:var(--muted)}
+.post .lede{font-family:var(--display);font-style:italic;font-size:clamp(1.15rem,2vw,1.35rem);line-height:1.6;color:var(--ink)}
+.post .principle{margin:0;padding:6px 0 6px 18px;border-left:2px solid var(--teal);font-family:var(--display);font-style:italic;font-size:1.15rem;line-height:1.5;color:var(--ink)}
+.post .principle b{display:block;font-family:var(--sans);font-style:normal;font-weight:500;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-bottom:4px}
+.post table{width:100%;border-collapse:collapse;font-size:.92rem;line-height:1.6}
+.post th,.post td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--tan)}
+.post th{font-weight:500;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.post td:first-child{font-weight:500}
+@media (max-width:600px){.post table,.post tbody,.post tr,.post td{display:block}.post thead{display:none}.post tr{padding:12px 0;border-bottom:1px solid var(--tan)}.post td{border:0;padding:2px 0}.post td[data-label]::before{content:attr(data-label) ": ";font-weight:500;color:var(--muted)}}
 .optin{background:var(--mint-soft);border-left:2px solid var(--teal);padding:clamp(22px,3.5vw,32px);display:grid;gap:12px;margin:10px 0}
 .optin .script{font-size:1.9rem;color:var(--teal)}
 .optin h3{margin:0}
