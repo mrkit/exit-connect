@@ -17,6 +17,7 @@ Everything committed is publicly served, so keep internal files out of git
 | `blog/` | The four article pages |
 | `img/` | All photos and logos the pages use |
 | `sitemap.xml`, `robots.txt` | Search engine files. Add each new article to the sitemap. |
+| `privacy.html` | Privacy Policy page. Embeds the brokerage's (EXIT Realty Connections) policy from Thryv. Meta lead ads link here, so keep the URL `/privacy`. |
 | `404.html` | Page shown for unknown addresses (noindex) |
 | `_headers` | Cloudflare Pages headers. Marks `_Archive/` as noindex. |
 | `_redirects` | Cloudflare Pages redirects. Sends `/README.md` and `/DECISIONS.md` to the home page. |

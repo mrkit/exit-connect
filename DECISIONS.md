@@ -4,6 +4,19 @@ Each entry records a choice made among real alternatives: date, what was chosen,
 why, and what was rejected. Add an entry in the same commit as the change.
 Routine choices with no real alternative do not get entries.
 
+## 2026-10-02: Privacy page embeds the brokerage's policy
+
+**Chosen:** `/privacy` shows EXIT Realty Connections' Privacy Policy by embedding
+the same Thryv-hosted page the brokerage site embeds, with a direct link as a
+fallback and the brokerage's contact for questions.
+
+**Why:** Maria must follow the brokerage's rules, so the site uses the brokerage's
+policy, and embedding keeps it identical whenever the brokerage's vendor updates it.
+
+**Rejected:** publishing Maria's own draft policy from the Cowork chat (not the
+brokerage's policy), and copying the Thryv text into the page (it is Thryv's
+text and would drift out of date).
+
 ## 2026-09-30: Redirect the repo notes instead of moving the site
 
 **Chosen:** a `_redirects` file sends `/README.md` and `/DECISIONS.md` to the
